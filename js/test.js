@@ -17,7 +17,8 @@
 
 
 // 오늘 배운 거 총 정리 ↓↓↓
-
+//(꼭 알아와)
+// ↓
  while (1) {
      let input = parseInt(prompt("정수 입력"));
      if(input === 7) {
