@@ -1,4 +1,6 @@
-div {
-  background-color: #fff;
+(hour >= 13) {
   color: black;
+}
+(hour <= 17) {
+  color: red;
 }
