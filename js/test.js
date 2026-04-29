@@ -1,36 +1,19 @@
-// let i = 1;
-// let tot = 0;
-// while(i<=10); {
-// tot = tot +i;
-// i++;
-// }
-// console.log(tot);
+// 화살표 함수 "(  ) => {      }"
 
-// let i = 1;
-// while(1) {
-//     console.log("Welcome");
-//     if (i === 7) {
-//         break;
-//     }
-//     i++;
-// }
+ const result = document.getElementById('result');
+ 
+ let date = new Date();
+let hour = date.getHours();
+
+if (1 < hour < 5) {
+    result.textContent = "안녕"
+} else {
+  result.textContent = "굿바이"
+}
 
 
-// 오늘 배운 거 총 정리 ↓↓↓
-//(꼭 알아와)
-// ↓
- while (1) {
-     let input = parseInt(prompt("정수 입력"));
-     if(input === 7) {
-         console.log('7이 입력되었으니 종료');
-         break;
-     }
-     let tot = 0;
-     for(i=1; i <= input; i++){
-        tot = tot + i;
-     }
-     console.log(tot);
-    }
 
-// 사용자로부터 입력받은 정수까지의 정수의 합계를 출력하시오
 
+// document.getElementById('testBtn').addEventListener('click', () => {
+//     alert("실행결과");
+// });
