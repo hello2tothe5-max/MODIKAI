@@ -1,17 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>내가 만든 화살표 함수 세상이야</title>
-</head>
-<body>
-    
-    <h1>화살표 함수 실습</h1>
-    <button id="testBtn">테스트 버튼</button>
-    <div id="result"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>상품 목록</h2>
+      <div class="product">사과 - 3,000원</div>
+      <div class="product">바나나 - 2,000원</div>
+      <div class="product">오렌지 - 4,000원</div>
+      <div class="product">포도 - 5,000원</div>
+    </div>
 
-    <script src="./js/test.js"></script>
-</body>
+    <button onclick="highlightProducts()">상품 강조하기</button>
+
+    <script>
+            function highlightProducts() {
+              const container = document.querySelector('.container');
+              const products = document.querySelectorAll('.product');
+
+              container.style.backgroundColor = '#f0f0f0';
+              container.style.padding = '20px';
+
+              products.forEach(products.forEach((product, index) => {
+                if (index % 2 === 0) { // index(번호표)를 직접 사용함!
+                product.style.backgroundColor = '#ffeb3b';
+            } else {
+                product.style.backgroundColor = '#ff0000';
+            }
+      })
+    );
+            }
+    </script>
+  </body>
 </html>
+
+<!-- products.forEach(function (product, index)  -->
+<!-- products: 디자인을 변경할 대상이 담긴 '목록'이다 -->
+<!-- .forEach 함수: 목록에 있는 것을 하나 하나 빠짐없이 다 불러와!!! -->
+<!-- function (product, index):
+ product 지금 막 바구니에서 꺼낸 '현재 대상'
+ index 이 녀석이 몇 번째인지 알려주는 번호표 -->
