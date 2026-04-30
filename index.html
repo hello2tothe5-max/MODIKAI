@@ -13,7 +13,6 @@
       <div class="product">오렌지 - 4,000원</div>
       <div class="product">포도 - 5,000원</div>
     </div>
-
     <button onclick="highlightProducts()">상품 강조하기</button>
 
     <script>
@@ -24,14 +23,13 @@
               container.style.backgroundColor = '#f0f0f0';
               container.style.padding = '20px';
 
-              products.forEach(products.forEach((product, index) => {
+              products.forEach((product, index) => {
                 if (index % 2 === 0) { // index(번호표)를 직접 사용함!
                 product.style.backgroundColor = '#ffeb3b';
             } else {
                 product.style.backgroundColor = '#ff0000';
             }
-      })
-    );
+      });
             }
     </script>
   </body>
